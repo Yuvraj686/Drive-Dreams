@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #313131;
+    color: #EEEEEE;
+  }
+  
+  header {
+    background-color: #313131;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #header {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  nav a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+    transition: color .3s ease-in-out;
+  }
+  nav a:hover{
+    text-decoration: underline;
+    font-size: large;
+    color: red;
+  }
+  
+  main {
+    padding: 20px;
+  }
+
+  footer {
+    background-color: #525252;
+    padding: 10px;
+    text-align: center;
+  }
+  .flex-container {
+    display: flex;
+    height: 500px;
+    align-items: center;
+}
+.flex-child {
+    flex: 1;    
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+    margin-left: 800px;
+  }
+  
+  #slideshow {
+    position: fixed;
+    margin-bottom: 400px;
+    border-radius: 10px;
+    border-color: black;
+    }
+    
+    #slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    }
+    #slideshow img.active {
+    opacity: 1;
+    }
+
+@keyframes animated-text {
+  from { width: 0;color: #EEEEEE; }
+  to { width: 100%; visibility: visible;color: aqua; }
+} 
+
+.animation {
+  padding: 2rem;
+  margin: 20px;
+}
+.line1,.line2,.line3,.line4,.line5,.line6 {
+  font-size: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-name: animated-text;
+  animation-duration: 1s;
+  animation-timing-function: steps(200, end);
+  animation-iteration-count: 1;
+  margin: 1rem;
+  }
+.line1 {
+    animation-delay: 0s;
+    color: aqua;
+  }
+
+.line2 {
+    visibility: hidden;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+.line3 {
+    visibility: hidden;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+.line4 {
+    visibility: hidden;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+.line5 {
+    visibility: hidden;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+  }
+.line6 {
+    visibility: hidden;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+  }
+.about{
+  padding: 2rem;
+  margin: 20px;
+  font-size: 20px;
+  white-space: nowrap;
+  margin: 1rem;
+  position: calc(0,0);
+}

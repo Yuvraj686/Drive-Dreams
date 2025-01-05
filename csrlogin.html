@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="carlogin.css">
+    <script src="bg.jpg" crossorigin="anonymous"></script>
+</head>
+<body>
+     
+    <div class="container">
+        <h2>Login</h2>
+
+        <form action="Main.html">
+            <div class="form-group">
+                <input type="email" required name="your-email" placeholder="email">
+                <label for="">Email</label>
+                
+            </div>
+
+            <div class="form-group">
+                <input type="password" required name="your-password" placeholder="password">
+                <label for="">Password</label>
+               
+            </div>
+
+            <p><input type="checkbox">Remember Me On This Device <a href="#"> <br> Forget Password </a></p> 
+
+            <input id="btn" type="submit" value="Login">
+            <a href=" main.html"></a>
+
+            <p>Don't have a account? <a href="#">Register</a></p>
+
+        </form>
+    </div>
+    <!-- <script>
+        const scriptURL='https://script.google.com/macros/s/AKfycbyZweRWavaqoUxTiXdOMHYyBXUwSWquS_dnR8F8NJJ7Mm6zDXak86s1GwTDGkvRfHLU/exec'
+const form = document.forms['form data']
+
+forms.addEventListner('submit',e =>{e.preventDefault()
+    fetch(scripURL, {method: 'POST',body:new FormData(form)})
+    .then(response => alert("Thanks for Contacting us..! we will contact you soon.."))
+})
+    </script> -->
+
+</body>
+</html>
